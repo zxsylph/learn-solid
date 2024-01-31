@@ -1,12 +1,16 @@
-import type { Component } from 'solid-js';
+import type { Component } from 'solid-js'
 
-import logo from './logo.svg';
-import styles from './App.module.css';
+import logo from './logo.svg'
+import styles from './App.module.css'
+import Test from '@/component/Test'
+import Button from '@/component/Button'
 
 const App: Component = () => {
   return (
     <div class={styles.App}>
       <header class={styles.header}>
+        <Test></Test>
+        <Button></Button>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -21,7 +25,7 @@ const App: Component = () => {
         </a>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
